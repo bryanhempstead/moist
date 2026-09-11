@@ -1,44 +1,52 @@
 {
-  "_source": "Colours sampled directly from ~/Desktop/moist.psd. Not invented.",
-  "_note": "The raw brand pair (gold on green) is 3.27:1 — correct for the logo and large headings, too low for body text. Each theme therefore pairs the brand colours with an off-white or charcoal ink. Never pure #FFF or #000.",
-
+  "_source": "2026-09-11: the green/gold PSD colourways are retired. These blues are sampled from Sav's painted skateboard (blue-on-white moon print) and the holographic mermaid sticker. The PSD wordmark shapes are unchanged.",
+  "_note": "Page colours per colourway; card (paper) colours are in renderer/moist-skin.css. Never pure #FFF or #000.",
   "brand": {
-    "green":     "#455129",
-    "gold":      "#D19533",
-    "offwhite":  "#F2EFE6",
-    "charcoal":  "#1F211A"
+    "blue": "#2F66C4",
+    "deep": "#1E4A99",
+    "white": "#EEF3FB",
+    "violet": "#6A4FD6",
+    "navy": "#0F1A38",
+    "pale": "#DCE6FF"
   },
-
   "themes": {
     "moist": {
-      "label": "moist",
-      "bg": "#455129", "paper": "#4E5B2F", "ink": "#F2EFE6",
-      "ac": "#D19533", "ac2": "#B87C24", "sb": "#6B7A45",
-      "contrast": { "ink": 7.42, "accent": 3.27 }
+      "label": "blue on white",
+      "ac": "#2F66C4",
+      "ac2": "#1E4A99",
+      "sb": "#E3EAF7",
+      "bg": "#EEF3FB",
+      "ink": "#14264A"
     },
     "moist-invert": {
-      "label": "moist.invert",
-      "bg": "#D19533", "paper": "#DCA548", "ink": "#1F211A",
-      "ac": "#455129", "ac2": "#33401E", "sb": "#A87526",
-      "contrast": { "ink": 6.24, "accent": 3.27 }
+      "label": "white on blue",
+      "ac": "#F3F7FE",
+      "ac2": "#C8D9F6",
+      "sb": "#275AB0",
+      "bg": "#2F66C4",
+      "ink": "#F3F7FE"
+    },
+    "moist-holo": {
+      "label": "holo",
+      "ac": "#6A4FD6",
+      "ac2": "#4636A8",
+      "sb": "#E4DDF7",
+      "bg": "#DCE4F6",
+      "ink": "#2A2550",
+      "ground": "cyan→lilac→pink→mint wash + fish-scale tile, see moist-skin.css"
     },
     "moist-dark": {
-      "label": "moist.dark",
-      "bg": "#1F211A", "paper": "#2A2D23", "ink": "#F2EFE6",
-      "ac": "#D19533", "ac2": "#7E8C4E", "sb": "#4A5237",
-      "contrast": { "ink": 14.15, "accent": 6.24 }
-    },
-    "moist-light": {
-      "label": "moist.light",
-      "bg": "#F2EFE6", "paper": "#E8E4D8", "ink": "#1F211A",
-      "ac": "#455129", "ac2": "#D19533", "sb": "#B9B4A2",
-      "contrast": { "ink": 14.15, "accent": 7.42 }
+      "label": "night",
+      "ac": "#8FB4FF",
+      "ac2": "#5B87E6",
+      "sb": "#0A1024",
+      "bg": "#0F1A38",
+      "ink": "#DCE6FF"
     }
   },
-
   "type": {
-    "heading": "'Futura','Century Gothic','Jost',sans-serif",
-    "body":    "Arial,'Helvetica Neue',Helvetica,sans-serif",
-    "_note":   "Both faces come from the logo artwork. Futura for the wordmark and headings, Arial for body copy."
+    "heading": "Orbitron (SIL OFL, bundled in fonts/)",
+    "body": "Helvetica Neue / Arial",
+    "dedication": "Silkscreen (SIL OFL, bundled)"
   }
 }

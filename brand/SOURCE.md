@@ -43,3 +43,29 @@ per-theme recoloured copy; there is one shape, tinted at render time.
 
 **Futura** for headings and the wordmark, **Arial** for body — both taken from the artwork.
 `renderer/index.html` already leads `--heading-font` with Futura, so headings need no change.
+
+---
+
+## 2026-09-11 — Sav's mascot and colourways
+
+The mermaid and the moon are hers. Two photos of her skateboard (a black-outline mermaid on a
+holographic scale sticker; a blue halftone moon, eye and stars on white paint) were traced
+mechanically — nothing redrawn:
+
+1. Upscaled 4× (mermaid) / 3× (moon) with Lanczos.
+2. Mermaid: every pixel darker than lum 85 is ink. Moon: red channel < 150 AND blue − red > 30
+   (the paint photographs blue-white, so "blue" alone selected the whole board), blurred 6px to
+   fuse the halftone dots, thresholded.
+3. Board edges and two dust specks masked off by rectangle; `potrace -a 1 -O 0.2`, turdsize
+   1500 / 400.
+4. `fill="currentColor"` so CSS tints the one file per colourway, like the `-mask.png` files.
+
+| File | What it is |
+|---|---|
+| `moist-mermaid.svg` | the mascot — top of the sidebar, and the app icon |
+| `moist-moon.svg` | moon, winking eye, tear and five stars — beside the wordmark, and the first-run mark |
+| `moist-icon-1024.png` / `AppIcon.icns` | white mermaid on brand blue, same chamfer as before |
+| `fonts/` | Orbitron 400/500/700 and Silkscreen 400, both SIL OFL |
+
+`palette.json` now carries the four blue colourways; the old green/gold values are gone from the app.
+The PSD wordmark and tagline masks are untouched and still tint through the accent.
