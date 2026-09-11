@@ -7,11 +7,14 @@
 A small desktop app for photographers, on macOS.
 
 - **ingest** — pull a card, sort by camera and date, no Finder dragging
+- **360** — pull a GoPro Fusion, then reframe the sphere into a flat clip with keyframes
 - **cull** — Bridge-style RAW culler; space to go full screen, arrows to walk, delete to reject
 - **drops** — one link anybody can upload to; what they send lands in the app
 - **client** — build a gallery and hand it to a client
 - **social** — schedule and post the picks
+- **assets** — logos, textures, design files, labelled for you
 - **print** — 3D printing: slice, repair a mesh, send it to the printer
+- **scans** — document and 3D scans, straight onto the plate
 - **photos** — your own photo library
 - **buy** — watch an item, get told when it goes cheap
 - **mail** — your inbox, next to the work
