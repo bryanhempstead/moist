@@ -29,8 +29,12 @@ Plus one optional add-on on the same disk image:
   it has to see screenshots system-wide. Open the `scrn.brd` folder on the disk image and
   right-click → Open its installer; it'll tell you if Hammerspoon is missing.
 
-Everything runs on your computer. There is no MOIST account, no server of ours, and nothing is uploaded
-anywhere. Anything that needs a server is a server *you* run — you paste its address in Settings.
+Everything runs on your computer. There is no MOIST account and no server of ours. Anything that needs a
+server is a server *you* run — you paste its address in Settings.
+
+The one thing that leaves your machine is a note you write yourself: press **⌘⇧F** (or the **note.** button
+in the sidebar), point at what you mean, and MOIST shows you the exact screenshot it would send before
+anything goes. Nothing is sent until you press **send.**, and you can leave the screenshot out.
 
 ---
 
